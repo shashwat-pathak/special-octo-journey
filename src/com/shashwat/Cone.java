@@ -1,20 +1,20 @@
 package com.shashwat;
 
 public class Cone {
-    private static double radius ;
-    private static double height ;
+    private double radius;
+    private double height;
 
     Cone(double radius , double height){
-      this.radius = Math.pow(radius,2);
-      this.height = Math.pow(height,2);
+      this.radius = radius;
+      this.height = height;
     }
 
-    public static double slantHeight(){
-        double s = Math.sqrt(radius) + Math.sqrt(height);
+    public double slantHeight(){
+        double s = Math.sqrt(Math.pow(radius,2)) + Math.sqrt(Math.pow(height,2));
         return s;
     }
 
-    public static double angle(){
+    public double angle(){
        double theta = Math.atan(radius/height);
        return theta;
     }
