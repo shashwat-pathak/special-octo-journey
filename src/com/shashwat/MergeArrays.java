@@ -11,9 +11,9 @@ public class MergeArrays {
         for (int i = 0; i < a.length; i++) {
             c[i] = a[i];
         }
-        for (int j = a.length, k = 0; j < a.length + b.length && k < b.length; j++, k++) {
+        for(int k =0 ; k<b.length ; k++){
 
-            c[j] = b[k];
+            c[a.length+k] = b[k];
         }
         Arrays.sort(c);
         System.out.print(Arrays.toString(c));
